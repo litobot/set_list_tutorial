@@ -7,4 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # `get '/songs'` is accepting the route or accepting the request.  This code gives us the ability to receive it.
+  get '/songs', to: 'songs#index'   # Then we are directing the request to the `songs` controller action
+                    # (`songs` = Name of controller & `index` = Action of the controller)
 end
